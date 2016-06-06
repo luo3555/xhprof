@@ -1,5 +1,5 @@
 ###XHPROF###
-1. ** 编译安装 **
+1. **编译安装**
 ```shell
 wget http://pecl.php.net/get/xhprof-0.9.2.tgz
 tar zxf xhprof-0.9.2.tgz
@@ -37,9 +37,9 @@ root
 |--xhprof_lib XHprof 自己的类库
 
 5. **使用介绍**
- - 在`track/index.php`中定义自己**XHPROF_ROOT**的位置
+ - 在`track/index.php`中定义自己**XHPROF_ROOT**的位置和`XHprof`的域名
  - 将要测试网站的**index.php**文件改名为**index.php.bak**
  - 讲`track/index.php`放到要测试的网站根目录
  - 如果header中没有自定义｀HTTP_X_XHPROF｀和`HTTP_X_XHPROF_JUMP`这两个字段可以直接将`index.php`中的这两个参数改为`true`
  - 为了动态的开关`XHprof`我们可以安装`Firefox`插件`Modify Headers`来帮助我们实现动态开关
- - 代码地址 [git@github.com:luo3555/xhprof.git](git@github.com:luo3555/xhprof.git)
+ - 代码地址 [https://github.com/luo3555/xhprof.git](https://github.com/luo3555/xhprof.git)
