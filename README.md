@@ -1,4 +1,4 @@
-###XHPROF###
+#XHPROF#
 **1. 编译安装**
 
 ```shell
