@@ -1,4 +1,4 @@
-#XHPROF#
+[XHPROF](https://github.com/longxinH/xhprof)
 
 **1. pecl 安装**
 
@@ -71,7 +71,6 @@ root
 |  | -- index.php 简化后的测试用文件
 |
 | -- xhprof_lib `XHprof 自己的类库，xhprof 下载解压后得到`
-
 
 
 **5. 使用介绍**
