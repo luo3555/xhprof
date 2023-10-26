@@ -62,6 +62,7 @@ xhprof.output_dir=/tmp/xhprof
 
 **4. 文件夹结构介绍**
 
+```txt
 root
 | -- output  测试输出的结果文件,位置需要配置到 xhprof.output_dir
 |
@@ -71,7 +72,7 @@ root
 |  | -- index.php 简化后的测试用文件
 |
 | -- xhprof_lib `XHprof 自己的类库，xhprof 下载解压后得到`
-
+```
 
 **5. 使用介绍**
  - 在`track/index.php`中定义自己**XHPROF_ROOT**的位置和`XHprof`的域名
