@@ -1,5 +1,5 @@
 <?php
-if (isset($_SERVER["HTTP_X_XHPROF"])) {
+if (isset($_SERVER["HTTP_XHPROF"])) {
     xhprof_enable();
 
     include 'index.php.bak';
@@ -16,7 +16,7 @@ if (isset($_SERVER["HTTP_X_XHPROF"])) {
     $tag = str_replace('.', '_', $_SERVER["HTTP_HOST"]) . date('Y-m-d_H_i_s', time());
     $run_id = $objXhprofRun->save_run($data, $tag);
     $url = $XHPROF_DOMAIN . '/index.php?source=' .$tag  . '&run=' . $run_id;
-    if (isset($_SERVER["HTTP_X_XHPROF_JUMP"])) {
+    if (isset($_SERVER["HTTP_XHPROF_JUMP"])) {
         echo '<a target="_blank" href="' . $url . '">' . $run_id . '</a>';
     }
 } else {
